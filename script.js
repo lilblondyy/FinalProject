@@ -12,21 +12,17 @@ $(document).ready(function () {
     if (displayName && commentText) {
       console.log("Condition passed");
 
-      let commentHtml = `<div class="comment">    
-
-
-                        <div class="contianerP"> 
-                         <p class="comment-author">${displayName}</p>
-                              <p>${commentText}</p>
-                              </div> 
-
-
-                                <div class="contianerB">
-                              <button class="edit-comment">Edit</button>
-                              <button class="delete-comment">Delete</button>
-                              </div>
-
-                            </div>`;
+      let commentHtml = `<div class="comment">
+<div class="profile-icon"></div>
+<div class="comment-content">
+    <p class="comment-author">${displayName}</p>
+    <p>${commentText}</p>
+    <div class="comment-actions">
+        <button class="edit-comment">Edit</button>
+        <button class="delete-comment">Delete</button>
+    </div>
+</div>
+</div>`;
 
       console.log("Generated HTML:", commentHtml);
       $(".comments-section").prepend(commentHtml);

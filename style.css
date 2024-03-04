@@ -16,7 +16,7 @@ body {
   top: 0;
   width: 100%;
   background-color: white;
-  padding: 40px;
+  padding: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
 }
@@ -28,9 +28,8 @@ body {
   background-color: white;
 }
 .comments-section {
-  padding-top: 60px;
+  margin-top: 120px;
   padding-bottom: 60px;
-  margin: auto;
   max-width: 600px;
 }
 .comment {
@@ -38,42 +37,62 @@ body {
   flex-direction: row;
   justify-content: space-between;
   color: black;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .edit-comment,
 .delete-comment {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: lightcyan;
+  color: lightskyblue;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 8px 12px;
-  font-size: 10px;
+  font-size: 15px;
   margin-left: 10px;
 }
-.delete-comment {
-  color: lightcyan;
-}
+
 #submit {
   background-color: transparent;
-  color: lightcyan;
+  color: lightskyblue;
   border: none;
   padding: 10px 16px;
   font-size: 10px;
   margin-top: 10px;
-}
-.contianerP {
-  max-width: 33%;
+  font-size: 15px;
 }
 #comment {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  width: 800px;
+  font-size: 15px;
+  width: 600px;
   height: 30px;
   color: black;
 }
 .username {
   display: block;
-  font-size: 10px;
+  font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
+}
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("https://static.thenounproject.com/png/881504-200.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.comment-content {
+  flex-grow: 1;
+}
+.comment-actions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 33%;
 }
